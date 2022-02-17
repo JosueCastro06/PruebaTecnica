@@ -159,7 +159,7 @@ const agregarDispositivo = async () => {
     const h = JSON.parse(localStorage.getItem('idsHis'));
 
     // for (let i = 0; i < his.length; i++) {
-    fetch('api/historico', {
+    await fetch('api/historico', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
